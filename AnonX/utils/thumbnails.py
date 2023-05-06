@@ -66,7 +66,7 @@ async def gen_thumb(videoid, user_id):
         try:
             hmm = await app.download_media(lucky[0]['file_id'], file_name=f'{user_id}.jpg')
         except Exception as e:
-            LOGGER("RiruruMusic").error(e)
+            LOGGER("AnonX").error(e)
             umm = await app.get_profile_photos(app.id)
             hmm = await app.download_media(umm[0]['file_id'], file_name=f'{app.id}.jpg')
         op = Image.open(hmm)
