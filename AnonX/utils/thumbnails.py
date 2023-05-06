@@ -7,9 +7,9 @@ import aiofiles
 import aiohttp
 from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from youtubesearchpython.__future__ import VideosSearch
-from RiruruMusic import app, LOGGER
+from AnonX import app, LOGGER
 from config import YOUTUBE_IMG_URL
-from RiruruMusic.assets import bgs
+from AnonX.assets import bgs
 
 
 def changeImageSize(maxWidth, maxHeight, image):
